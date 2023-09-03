@@ -16,8 +16,7 @@ int main(){
     int array[size];
 
     read_array(array);
-    //cout << "\n" << array[21];
-/**
+    
     cout << "\nEnter in an integer to check if it exists in the array." << endl;
     cin >> target;
 
@@ -39,11 +38,10 @@ int main(){
 
     add_value(array, end_value);
     cout << "The value at index 100 is now " << array[100];
-*/
 
     cout << "Enter in index 0-149 you wish to remove. \n";
     cin >> index;
-    cout <<endl;
+    cout << endl;
 
     remove_value(array, index, size);
 

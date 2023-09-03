@@ -5,22 +5,18 @@
 using namespace std;
 
 /** Reads input file and places values in array
-    @param x Array to search
+    @param x Array to use
 */
 void read_array(int x[]){
-
     ifstream inFile;
     inFile.open("input.txt");
     
     while (!inFile.eof()){
-        
         for(int i = 0; i < 100; i++){
             inFile >> x[i];
-            //cout << x[i] << " ";
         }
         for(int i = 100; i < 150; i++){
             x[i] = 0;
-            //cout << x[i] << " ";
         }
         inFile.close();
     }
