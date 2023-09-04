@@ -1,49 +1,48 @@
-#include "header.h"
-#include "header.cpp"  //remove this later
+#include "array.h"
 #include <iostream>
 #include <fstream>
 
 using namespace std;
 
 int main(){
-    const int size = 150;
+    const int x_size = 150;
     int target = 0;
     int value = 0;
-    int index= 0;
+    int index = 0;
     int new_value = 0;
     int end_value = 0;
 
-    int array[size];
+    int x[x_size]; //initialize array x
 
-    read_array(array);
-    
-    cout << "\nEnter in an integer to check if it exists in the array." << endl;
+    read_array(x);
+
+    /**tests check_array function*/
+    cout << "\n1) Enter in an integer to check if it exists in the array." << endl;
     cin >> target;
-
-    value = check_array(array, target, size);
+    value = check_array(x, target, x_size);
     if (value != -1)
-        cout << "Value " << target << " exits at index " << value;
+        cout << "Value " << target << " exits at index " << value << ".";
     else
-        cout << "Value " << target << "was not found.";
+        cout << "Value " << target << " was not found.";
 
-    cout << "\nEnter an index 0-149 you wish to modify.\n";
+    /**tests set_value function*/
+    cout << "\n2) Enter an index 0-149 you wish to modify.\n";
     cin >> index;
-    cout << "\nEnter in the value you wish to replace with.\n";
+    cout << "Enter in the value you wish to replace it with.\n";
     cin >> new_value;
+    set_value(x, index, new_value);
 
-    set_value(array, index, new_value);
-
-    cout << "\nWhat value would you like to add to the end of the array?\n";
+    /**tests add_value function*/
+    cout << "\n3) What value would you like to add to the end of the array?\n";
     cin >> end_value;
+    add_value(x, end_value);
+    cout << "The value at index 100 is now " << x[100] << ".\n";
 
-    add_value(array, end_value);
-    cout << "The value at index 100 is now " << array[100];
-
-    cout << "Enter in index 0-149 you wish to remove. \n";
+    /**tests remove_value function*/
+    cout << "4) Enter in an index 0-149 you wish to remove.\n";
     cin >> index;
-    cout << endl;
-
-    remove_value(array, index, size);
+    remove_value(x, index, x_size);
+    cout << "Index " << index << " is now removed.";
 
     return 0;
 }
