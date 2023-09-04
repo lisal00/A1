@@ -3,7 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <stdexcept>
-#include <limits> //remove?
+#include <ios> //remove?
 
 using namespace std;
 
@@ -31,7 +31,23 @@ int main(){
 
     /**tests set_value function*/
     cout << "\nEnter an index 0-149 you wish to modify.\n";
-    cin >> index;
+    
+    try{
+        cin.exceptions(ios_base::failbit);
+        cin >> index;
+        
+        //cin >> index;
+        /**
+        if (index < 0 || index > 150){
+            throw index;
+        }
+        */
+    }
+    catch(ios_base::failure& ex){
+        cerr << "womomom " << ex.what();
+        abort();
+    }
+
     cout << "Enter in the value you wish to replace with.\n";
     cin >> new_value;
     set_value(x, index, new_value);
