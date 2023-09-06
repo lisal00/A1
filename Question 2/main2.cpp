@@ -31,7 +31,7 @@ int main(){
     cin.exceptions(ios_base::failbit);
     try{
         cin >> index;
-        if (index < 0 || index > 150){ //checks to see if input is in bounds
+        if (index < 0 || index > 149){ //checks to see if input is in bounds
             throw 0;
         }
         cout << "Enter in the value you wish to replace it with.\n";
