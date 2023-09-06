@@ -1,6 +1,5 @@
 #ifndef ARRAY2_H_
 #define ARRAY2_H_
-#include "array2.cpp" //VSCode wont compile without including this .cpp file
 
 using namespace std;
 
