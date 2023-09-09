@@ -1,24 +1,29 @@
 # Assignment 1
 
-Instructions:
+## Instructions:
 Run main.cpp in the file Question 1 or run main2.cpp in the file Question 2, and follow the prompts given. 
 
+## Question 1:
 1) When you run main.cpp and follow the prompts:
 
-![main cpp_output](https://github.com/lisal00/A1/assets/143776518/27f5d55e-d593-4c48-a922-25c6add94262)
+![image](https://github.com/lisal00/A1/assets/143776518/1a8087db-c918-4c1a-b3ac-4ebb43c8e9c9)
 
-2) When you run main2.cpp and do not input an integer for function 2:
-
-![MAIN2 CPP_error1](https://github.com/lisal00/A1/assets/143776518/e0a14946-2c85-42f1-9655-16756b4da08b)
-
-3) When you run main2.cpp and enter in an integer out of bounds of the array for function 2:
-
-![main2 cpp_outofrange](https://github.com/lisal00/A1/assets/143776518/edff5932-8ad3-4936-87b0-c94cf6b97ff4)
-
-5) When you run main2.cpp and enter in a noninteger for the value for function 2:
+## Question 2:
+1) Inputting a noninteger for function 2:
    
-![image](https://github.com/lisal00/A1/assets/143776518/c07ab568-fcb0-4269-9392-9e50730a0920)
+![image](https://github.com/lisal00/A1/assets/143776518/1f2f1df4-f64c-47c6-9cb1-6df3bc59603f)
 
-7) When you run main2.cpp and enter in a noninteger for function 3
+
+Or inputting a number out of bounds:
+
+![image](https://github.com/lisal00/A1/assets/143776518/196cc7b2-c046-417d-bd20-33b6cf3d3c70)
+
+
+2) Inputting a noninteger for the value for function 2:
    
-![image](https://github.com/lisal00/A1/assets/143776518/5ad537d1-5f5d-4201-b9ef-edf2a7b22415)
+![image](https://github.com/lisal00/A1/assets/143776518/9bbc683b-ed8c-40bb-a243-c6bf3b999b1f)
+
+3) Inputting an noninteger for function 3:
+   
+![image](https://github.com/lisal00/A1/assets/143776518/07319681-29aa-40ae-a1eb-4d3c0d268941)
+
