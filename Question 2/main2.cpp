@@ -25,9 +25,9 @@ int main(){
     cin >> target;
     value = check_array(x, target, x_size);
     if (value != -1)
-        cout << "Value " << target << " exits at index " << value << ".";
+        cout << "Value " << target << " exits at index " << value << ".\n";
     else
-        cout << "Value " << target << " was not found.";
+        cout << "Value " << target << " was not found.\n";
 
 
     /**tests set_value function*/
@@ -67,7 +67,7 @@ int main(){
         cerr << "\nError: "<< ex.what();
         abort();
     }
-    cout << "The value at index 100 is now " << x[100] << ".";
+    cout << "The value at index 100 is now " << x[100] << ".\n";
 
 
     /**tests remove_value function*/
