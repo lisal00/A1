@@ -1,5 +1,5 @@
-#ifndef ARRAY_H_
-#define ARRAY_H_
+#ifndef ARRAY2_H_
+#define ARRAY2_H_
 
 using namespace std;
 
