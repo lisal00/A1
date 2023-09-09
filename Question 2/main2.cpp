@@ -35,8 +35,11 @@ int main(){
     cin >> index_str;
      try{
         istringstream index_stream(index_str);
-        if (!(index_stream >> index) || !index_stream.eof() || index < 0 || index > 149){ //checks to see if str can turn into int & if in bounds
-            throw invalid_argument("Invalid input for index."); //else, will throw exception
+        if (!(index_stream >> index) || !index_stream.eof()){ //checks to see if str can turn into int (sees if input is valid integer)
+            throw invalid_argument("Invalid input for index."); //if not, will throw exception
+        }
+        if (index < 0 || index > 149){
+            throw out_of_range("Out of of bounds.");
         }
 
         cout << "Enter in the value you wish to replace it with: ";
@@ -47,7 +50,11 @@ int main(){
         }
     }
     catch (const invalid_argument& ex) {
-        cerr << "Error: " << ex.what() << endl;
+        cerr << "Error: " << ex.what();
+        abort();
+    }
+    catch (const out_of_range& ex2){
+        cerr << "Error: " << ex2.what();
         abort();
     }
     set_value(x, index, new_value);
