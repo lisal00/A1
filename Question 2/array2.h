@@ -1,5 +1,6 @@
 #ifndef ARRAY2_H_
 #define ARRAY2_H_
+#include "array2.cpp" //wont compile without including .cpp file
 
 using namespace std;
 
