@@ -1,7 +1,6 @@
 #include "array2.h"
 #include <fstream>
 #include <iostream>
-#include <stdexcept>
 
 using namespace std;
 
@@ -46,12 +45,11 @@ int check_array(int x[], int target, int x_size){
 */
 void set_value(int x[], int index, int new_value){
     int old_value = 0;
-    
     old_value = x[index];
     x[index] = new_value;
-    
-    cout << "\nThe old value of index " << index 
-    << " was " << old_value << ". The new value is now " << x[index] << ".";
+
+    cout << "The old value of index " << index 
+    << " was " << old_value << ". The new value is now " << x[index] << ".\n";
 }
 
 /** If valid input, adds new integer to end of array. If not, aborts.
@@ -59,14 +57,7 @@ void set_value(int x[], int index, int new_value){
     @param end_value Integer to add to end of array
 */
 void add_value(int x[], int end_value){
-    try{
-        x[100] = end_value;
-        throw x[100];
-    }
-    catch(...){
-        cout << "Invalid input.";
-        abort();
-    }
+    x[100] = end_value;
 }
 
 /** Removes integer at certain array index
@@ -78,9 +69,4 @@ void remove_value(int x[], int index, int x_size){
     for (int i = index; i < x_size - 1; i++){
         x[i] = x[i+1];
     }
-    /* testing and printing out array
-    for(int i = 0; i < 150; i++){
-            cout << x[i] << " ";
-        }
-*/
 }
