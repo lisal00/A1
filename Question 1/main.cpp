@@ -42,7 +42,12 @@ int main(){
     cout << "\n4) Enter in an index 0-149 you wish to remove: ";
     cin >> index;
     remove_value(x, index, x_size);
-    cout << "Index " << index << " is now removed.";
+    cout << "Index " << index << " is now removed.\n";
+
+    cout << "\nHere is the modified array: \n";
+    for(int i = 0; i < 150; i++){
+            cout << x[i] << " ";
+        }
 
     return 0;
 }
